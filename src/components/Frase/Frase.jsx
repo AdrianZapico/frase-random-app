@@ -30,14 +30,14 @@ export default function Frase() {
     <>
     <Container>
       <Title >
-      <h1 className="titulo">Get Random Phrase</h1>
+      <h1>Get Random Phrase</h1>
       </Title >
       </Container>
       {toggle && (
         <div>
     <Container>
         <DivFrase>
-      <p className="citacoes">{citacoes.text}</p>
+      <p>{citacoes.text}</p>
       </DivFrase>
       </Container>
       <Container>
