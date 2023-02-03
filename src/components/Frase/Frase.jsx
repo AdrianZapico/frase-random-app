@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, DivFrase, DivAuthor, Button } from "./style";
+import { Container, DivFrase, DivAuthor, Button, Title ,Button2 } from "./style";
 
 
 
@@ -9,6 +9,7 @@ const numAleatorio = () => Math.floor(Math.random() * data.length) + 1;
 
 export default function Frase() {
   const [citacoes, setCitacoes] = useState({});
+  const[toggle,setToggle] = useState(false);
 
   useEffect(() => {
     getCitacoes();
@@ -28,9 +29,13 @@ export default function Frase() {
   return (
     <>
     <Container>
-      <h1 className="titulo">Ramdon Frase</h1>
+      <Title >
+      <h1 className="titulo">Get Random Phrase</h1>
+      </Title >
       </Container>
-      <Container>
+      {toggle && (
+        <div>
+    <Container>
         <DivFrase>
       <p className="citacoes">{citacoes.text}</p>
       </DivFrase>
@@ -48,6 +53,12 @@ export default function Frase() {
       </Button>
       </Container>
 
+        </div>
+      )}
+  
+      <Container>
+      <Button2 onClick={()=> setToggle(!toggle)}>Click </Button2>
+      </Container>
       </>
   );
 }

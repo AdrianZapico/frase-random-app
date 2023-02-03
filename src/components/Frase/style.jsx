@@ -10,11 +10,15 @@ export const Container = styled.div`
     text-align: center;
 
 `
+export const Title = styled.div`
+    color: #e3dddd;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+`
 
 export const DivFrase = styled.div`
 
     background-color: #0d0d25;
-    color: white;
+    color: #e1dede;
     width: 600px;
     text-align: center;
     border-radius: 10px;
@@ -32,7 +36,6 @@ export const DivAuthor = styled.div`
     font-family: cursive,italic;
     font-size: 10px;
 `
-
 export const Button = styled.button`
 
     margin-top: 10px;
@@ -63,3 +66,35 @@ export const Button = styled.button`
   
 
 `
+
+export const Button2 = styled.button`
+
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4051d2;
+    transition: ease-in-out 0.8s; 
+    &:hover
+    {
+    background-color: #7e56da;
+    border-color: rgba(19, 0, 0 );
+    color:rgba(19, 0, 0 ) ;
+    
+   
+    }
+    &:active
+    {
+    transition: ease-in-out 0.1s; 
+    background-color: #6423f0;
+    border-color: rgba(19, 0, 0 );
+    color:rgba(19, 0, 0 ) ;
+    transform: scale(0.8);
+   
+    }
+
+  
+
+`
+
