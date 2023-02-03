@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, DivFrase } from "./style";
+import { Container, DivFrase, DivAuthor, Button } from "./style";
 
 
 
@@ -36,14 +36,16 @@ export default function Frase() {
       </DivFrase>
       </Container>
       <Container>
-      <p>
+        <DivAuthor>
+      <p style={{margin:'2px'}}>
        - {citacoes.author ? citacoes.author : "Desconhecido"}
       </p>
+      </DivAuthor>
       </Container>
       <Container>
-      <button className="botao" onClick={getCitacoes}>
-        Nova Citação
-      </button>
+      <Button  onClick={getCitacoes}>
+        Get Phrase
+      </Button>
       </Container>
 
       </>
