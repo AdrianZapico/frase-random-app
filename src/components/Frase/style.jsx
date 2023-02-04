@@ -103,7 +103,7 @@ export const Button2 = styled.button`
 
 `
 export const Image = styled.img`
-    width: 170px;
-    height: 170px;
-    margin-top: 5px;
+    width: 160px;
+    height: 160px;
+   margin-bottom: 0px;
 `

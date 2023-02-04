@@ -53,9 +53,9 @@ export default function Frase() {
       </Button>
       </Container>
 
-        <Container>
+        <Container style={{padding:"-2px"}}>
         <Title >
-      <h4>Donate by Pix</h4>
+      <h5>Donate by Pix</h5>
       </Title >
         </Container>
         <Container>
