@@ -61,6 +61,11 @@ export default function Frase() {
         <Container>
           <Image src={qr} alt="qr" />
         </Container>
+        <Container>
+        <Title>
+        <h6>or: (31) 9 71095552 </h6>
+        </Title>
+        </Container>
         </div>
         
       )}
