@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Container, DivFrase, DivAuthor, Button, Title ,Button2 } from "./style";
-
+import { Container, DivFrase, DivAuthor, Button, Title ,Button2, Image } from "./style";
+import qr from  '../../assets/images/qr.png'
 
 
 const url = "https://type.fit/api/quotes";
@@ -53,12 +53,23 @@ export default function Frase() {
       </Button>
       </Container>
 
+        <Container>
+        <Title >
+      <h4>Donate by Pix</h4>
+      </Title >
+        </Container>
+        <Container>
+          <Image src={qr} alt="qr" />
+        </Container>
         </div>
+        
       )}
   
       <Container>
       <Button2 onClick={()=> setToggle(!toggle)}>Click </Button2>
+      
       </Container>
+     
       </>
   );
 }

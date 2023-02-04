@@ -70,7 +70,6 @@ export const Button = styled.button`
   
 
 `
-
 export const Button2 = styled.button`
 
     margin-top: 10px;
@@ -103,4 +102,8 @@ export const Button2 = styled.button`
   
 
 `
-
+export const Image = styled.img`
+    width: 170px;
+    height: 170px;
+    margin-top: 5px;
+`
