@@ -59,10 +59,13 @@ export default function Frase() {
       </Title >
         </Container>
         <Container>
+          <div style={{  boxShadow:'  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'}}>
           <Image src={qr} alt="qr" />
+          </div>
         </Container>
         <Container>
         <Title>
+            
         <h6>or: (31) 9 71095552 </h6>
         </Title>
         </Container>
